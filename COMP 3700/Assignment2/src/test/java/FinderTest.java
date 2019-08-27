@@ -1,5 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
+
 public class FinderTest {
    @Test
    public void findMax_empty() {
