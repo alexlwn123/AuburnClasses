@@ -1,0 +1,23 @@
+8/30/19
+
+PDU: Protocol Data Unit
+Encapsilation: move up layers, building upon
+
+TCPIP Layers:
+Application Layer: data
+Transport Layer: Segment
+Internet Layer: Packet
+Network Layer: Frame, Mac Address
+
+Mac Address Switching Table
+
+Address Resolution Protocol
+-between mac addresses and ip addresses
+-if incomplete: broadcast question to all devices in network
+    -response is unicast
+
+IP Addresses: 9 types
+-local address: 192.168.XXX.XXX
+-loopback address: 127.0.0.0 - 127.255.255.255: testing
+
+-broadcast

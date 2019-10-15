@@ -1,1 +1,1 @@
-This repository contains notable projects from my undergraduate studies at Auburn University.
+This repository contains notable projects and coursework from my undergraduate studies at Auburn University.

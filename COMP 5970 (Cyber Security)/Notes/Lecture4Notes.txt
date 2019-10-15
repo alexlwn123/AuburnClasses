@@ -1,0 +1,41 @@
+Scripting:
+  bash pass :   `:`
+  shuf : randomized loop
+
+
+Malware
+-------
+  Viruses:
+    Macro: Generated in macro of large program
+    Polymorphic: Code changes slightly
+    Multipartite: multiple vectors (ie. sits on email and sends emails)
+    Armored: designed to hide logic from anti-malware
+
+  Worms: stand alone malware, does not require host, first legal cyber case
+
+  Ransomware: encrypts victim information and demand payment to decrypt
+  Trojan: hidden behind real programs
+  Rootkits: hides malicious activity, go to core of system (Kernel, Library, Application)
+
+  Classification:
+
+  Indicators of Compromise: any indication of malware (ie. slow computer, unusual traffic/ dns requests, strange web traffic)
+
+
+Network Layer Attacks
+  Mac Address Spoofing: mask as another device
+  ARP Spoofing: Arp Cache Poisoning: (Gratuitous ARP: responds to broadcast), can do other attacks
+  Session Hijacking:
+  Keyloggers: Hardware, (KeyGrabber, Key Ghost)
+  VLAN Hopping: Double Taggin, Switch spoofing (declare access port as Trunk Port) Frogger, Yersinia
+
+Internet Layer Attacks
+  Dos: Ping of Death, Smurf(large number of small pings), macof, Xerxes
+  IP Spoofing: Change source ip to hide true source (hping3, scapy)
+  Network Proxy: Reroute connection (Proxychains, Tor)
+
+Transport Layer Attacks
+  Dos: TCP Null Flood, SYN Flood, Fraggle Attack, UDP Flooding (prevent legitimate users)
+  Netcat: (versions: netcat/ nc <vulnerable>, ncat <new>), tcp or udp
+    Forwards Traffic, ssl support, chain connections
+    Bind connection: handshake, data

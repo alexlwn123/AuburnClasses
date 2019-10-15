@@ -1,0 +1,46 @@
+National Institute of Standards and Technology published NIST Special
+Publication 800-181 identifying workforce categories and specialties. 
+
+Penetration Test
+	An authorized set of simulated cyber attacks against organizations to 
+	identify unknown rouths to access systems and networks
+	Identification of only a few threat vectors into a system or network
+Vulnerability Assessment
+	A technical evaluation of organizational assets to enumerate all
+	potential system or network vulnerabilities
+Security Test
+	A full scope evaluation of organizational assets to enumerate all
+	potential system or network vulnerabilities
+	Assesses not only technical, but also administrative and management
+	controls
+	
+White Box
+	Organizational Structure: Full Access
+	Network Architecture: Partial to Full Access
+	Application Testing: Source Code Provided
+	Cost: Least Expensive
+Gray Box
+	Organizational Structure: Partial Access
+	Network Architecture: No Access to Patial
+	Application Testing: Some Source Code Provided
+	Cost: In Between
+Black Box
+	Organizational Structure: No Access
+	Network Architecture: No Access
+	Application Testing: No Access
+	Cost: Most Expensive
+	
+A number of professional organizations have created methodologies and
+frameworks that define how to effectively conduct security assessments
+	OWASP Project Testing Guide
+	Penetration Testing Execution Standard (PTES)
+	Penetration Testing Framework (PTF)
+	Technical Guide to Information Security Testing and Assessment
+	Information Systems Security Assessment Framework
+	Open Source Security Testing Methodology Manual (OSSTMM)
+	Cybersecurity Evaluation Tool (CSET)
+	
+An attack vector is any method used to comprimise administrative,
+management, or technical controls and gain unauthorized access to a system
+or network.
+

@@ -1,0 +1,74 @@
+Subnetting
+  Breaks up into multiple networks
+  Optimizes broadcasts
+
+  Network Address Translation
+  Configurations:
+    Static NAT: internal host communicates with single ip
+    Dynamic NAT: communicates with pool of ips
+    NAT Overloading: (port address translation) at most 65,000 ports
+      IANA: Port Assignment
+
+IPv6
+  128 bits
+  All 0's compressed ==> ::
+  Sections:
+    Site Prefix: 48 bits
+    Subnet ID: 16 bits
+    Interface ID: 64 bits
+
+  Important addresses:
+    Loopback ::1
+    Global Unicast range  2000::/3
+    Link-Local Unicast range fe8::/10
+    Multicast range ff00::/8
+
+ICMP: Internet Control Message Protocol
+  can also identify if local on arp and tcp
+
+  TTL: Time To Live
+    Number of network hops before timing out
+    Use this to determine operating system
+    Linux flavors: 64
+    Windows: 128
+    ios: 255
+
+
+Linux Scripting
+  Permissions: wrx (read write execute)
+    described in binary 0 (000) is none, 7 (111) is all
+    chmod: change permissions
+
+IP Security (IPsec)
+  IPv4 Optional, IPv6 mandatory
+  Transport Mode: only encrypts data
+  Tunneling Mode: completely encrypted, data and IP source/destination
+
+
+Transport Layer
+  TCP (Transmission Control Protocol): 3 way handshake
+    Handshake: sync port, replies with syn/acknowledgement or reset, final acknowledgement
+    Window size established
+    Flags
+
+  UDP (User Diagram Protocol): scatter shot
+    "Best Effort"
+    Data is sent with no regard to reception
+
+
+Application Layer
+  FTP: file transfer protocol, must establish connection first (handshake)
+  SSH, SFTP, SCP: encrypted protocols, all on port 22
+  Telnet: legacy, unencrypted channel for connections
+  SMTP: legacy, mail
+  DNS: translates domain to ip address, lots of info, can be used to gather info
+  DNSSEC: tamper detection
+  SMTP: DO EXERCISE slide 96, 97
+  DHCP (Dynamic host configuration protocol)
+    Discover Offer Request Acknowledge (DORA)
+    Discover: Broadcast sent by host
+    Offer: DHCP unicast response and offers address
+    Request: host asks to use offered address
+    Acknowledge: DHCP Server confirms use
+
+

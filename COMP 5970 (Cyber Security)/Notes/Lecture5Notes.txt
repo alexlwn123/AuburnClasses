@@ -1,0 +1,47 @@
+netcat
+  -reverse connection: nc -lvp 10000
+  -bind connection: ncat -lvp 10000  (allows commands to be sent)
+
+Application layer attacks
+  -DOS: http/https floods, dns flooding
+  -Replay Attacks: capture and replay traffic
+  -Password Cracking: Brute Force,
+    -Rainbow Table: hash password before storing it
+  -Client-Side Attacks: Clicking Links, Opening Documents, Redirecting to a malicious site
+  -Typo Squatting: URL Hijacking
+
+Presentation 4
+---------------
+
+Footprinting: Reconnaissance
+  -Not all malicious (Competative intel)
+  ***-IANA: port and info, ip address allocation, regional distribution of addresses
+  ***-IETF: request for comments, internet standards
+  -Whois records: Domain Dossier (tool), find ip info
+  -DNS:
+  -Zone Transfer: provides info about site
+
+HttP
+  -http status codes: 1xx=informational, 2xx=success,
+      3xx=redirect, 4xx=client error, 5xx=server error
+  -Methods: get, post, head
+    OPTIONS / HTTP/1.1
+    HOST:[target ip]     Only for 1.1
+
+    [method] [root] HTTP/[1.0 or 1.1]
+
+Cookies vs Web Bugs
+  -Web Bugs: provides basic information
+  -Cookies: deeper information
+  -Export wireshark to netminer
+
+Email
+  -Determine if email was read
+  -find geo location
+
+Traceroute
+  -find route to site
+
+Google search
+  -inurl:[file].xls
+  -allintext:[file].docx

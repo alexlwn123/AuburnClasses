@@ -1,0 +1,18 @@
+Findings from whois:
+  ip ranges
+  geographic location
+  mail servers/ ipv4 and ipv6 info
+
+footprinting with Maltego
+
+
+Social Engineering: (Wetware)
+  - Gather info, then focus attack
+  - Authority, Intimidation, Social Proof/ Consensus, Scarcity, Urgency, Familiarity, Trust
+
+Port Scanning: gather info
+nmap: scan tool, flags in man for different scans
+Class A network: massScan
+Metasploit
+
+
