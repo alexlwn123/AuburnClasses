@@ -1,0 +1,21 @@
+Enumeration: extracting network info
+  - Need active connection
+
+Workgroup (small), one subnet, all systems are peers (no control over another)
+Domain (big): Requires a server to centrally control security
+
+End of Life: check operating system end of life, no updates after, all exploits still good
+
+Windows
+  - Windows NT 3.51: removed peer to per, replaced with client server
+  - 2000 Server: Active Directory (uses Lightweight Directory Access [LDAP] protocol)
+  - XP: 2001, Kernel Protection, Data Execution Prevention(monitor memory usage), default firewall
+  - 2003: Windows NT 5.2, Internet Information Services (IIS), RDP, VPN, Windows Management Instrumentation (WMI), Public Key Infrastructure (PKI), Certificates, More Active Directory
+  - Vista: 2006, User Account Control (UAC, Ask user to change privileges), Full Drive Encryption
+  - Windows Server 2008: End of life
+  - Windows 7: 2009, Update UAC, App Locker (White lists/ black lists applications)
+  - Windows 8: 2012, Heap Integrity Checking(Dynamic memory checking), Secure boot (fixes root kit/ kernel attacks)
+  - Windows Server 2012: Authentication Silos (prevents pass-the-hash attacks), DNS Name Authentication (DNSSEC)
+  - Windows 10: 2015, Device Guard (Better White List), Credential Guard (uses tokens in VM)
+
+NetBIOS
