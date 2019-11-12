@@ -16,7 +16,7 @@ ExitProcess proto,dwExitCode:dword
 				mov ah, LENGTHOF s1         ;stores length of s1
 				mov al, LENGTHOF s2         ;stores length of s2
 
-				test ah, al                 ;immediatly exists if lengths are not equal
+				cmp ah, al                 ;immediatly exists if lengths are not equal
 				jne Bad
 
         mov ecx, LENGHTOF s1        ;iterate though the length of the string
@@ -29,12 +29,12 @@ ExitProcess proto,dwExitCode:dword
             movzx edi, s1[esi]      ;move the value from s1 into edi
             add ebx, edi            ;add edi into ebx
             movzx edi, s2[esi]      ;move the value from s2 into edi
-            sub   ebx, edi          ;subtract edi from ebx
+            sub ebx, edi            ;subtract edi from ebx
             inc esi                 ;increment esi
             loop CounterLoop        ;Once the loop is over, ebx will be zero if and only if s1 and s2 had the same letters 
 				
 
-				test ebx, 0                 ; If ebx == 0, then the words are anagrams 
+				cmp ebx, 0                  ; If ebx == 0, then the words are anagrams 
 				je Good              
 				jne Bad
 
