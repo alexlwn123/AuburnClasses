@@ -1,40 +1,53 @@
-;Alexander Lewin
-;10/3/2019
-;Comp 3350, Project 2
+; Author: Alexander Lewin
 
 .386
 .model flat,stdcall
 .stack 4096
-ExitProcess proto, dwExitCode:dword
+ExitProcess proto,dwExitCode:dword
 
 .data
-input BYTE 1,2,3,4,5,6,7,8
-shift BYTE 2
-
-
+    s1 byte "GARDEN"
+    s2 byte "DANGER"
+    c1 byte 26 dup(0)               ;counter for each letter in s1
+    c2 byte 26 dup(0)               ;counter for each letter in s2
 .code
-main proc
+    main proc
+				
+				mov ah, LENGTHOF s1         ;stores length of s1
+				mov al, LENGTHOF s2         ;stores length of s2
 
-	mov eax, 0
-	mov ebx, 0
-	mov ecx, 0
-	mov edx, 0
-	add ah, shift
-	add ah, [input]
-	add al, shift
-	add al, [input+1]
-	add bh, shift
-	add bh, [input+2]
-	add bl, shift
-	add bl, [input+3]
-	add ch, shift
-	add ch, [input+4]
-	add cl, shift
-	add cl, [input+5]
-	add dh, shift
-	add dh, [input+6]
-	add dl, shift
-	add hl, [input+7]
+				test ah, al                 ;immediatly exists if lengths are not equal
+				jne Bad
 
-main endp
+        mov ecx, LENGHTOF s1        ;iterate though the length of the string
+        mov esi, 0                  ;start at the first byte of s1 and s2
+				mov ebx, 0                  ;Keeps running total of difference between words 
+																    ;At the end, if ebx is 0, we know that the words must have had the same letters	
+
+        CounterLoop:                ;this will traverse through s1 and s2 
+
+            movzx edi, s1[esi]      ;move the value from s1 into edi
+            add ebx, edi            ;add edi into ebx
+            movzx edi, s2[esi]      ;move the value from s2 into edi
+            sub   ebx, edi          ;subtract edi from ebx
+            inc esi                 ;increment esi
+            loop CounterLoop        ;Once the loop is over, ebx will be zero if and only if s1 and s2 had the same letters 
+				
+
+				test ebx, 0                 ; If ebx == 0, then the words are anagrams 
+				je Good              
+				jne Bad
+
+				Good:
+            mov eax, 1              ;Signifies there is an anagram
+						jmp NoAna
+
+				Bad:
+						mov eax, 0              ;Signifies there is no anagram``
+						jmp NoAna
+
+        NoAna:
+            invoke ExitProcess, 0
+
+    main endp
 end main

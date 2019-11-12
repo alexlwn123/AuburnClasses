@@ -1,0 +1,21 @@
+SIDs: Security Identifiers
+  HKEY_USERS: registry that tracks all SIDs
+  WMIC: Windows tool to identify system and accounts
+
+NetBIOS Null Session: Unauthenticated connection to computer that doesn't use user/pass
+  net use \\10.40.25.21\IPC$ /u:“” “”
+
+  To restrict: modify windows registry
+
+Sockets:
+  - Unique identification to network, Unique Combination of IP and port
+  - Socket Programming: variety of languages
+  - Python:
+      Create Socket: s = socket.socket()
+      Bind Local Port to Process: s.bind(IP, Port)
+      Listen for Connection: s.listen()
+      Accept New Connection: s.accept()
+      Read and Write Data Over Socket: s.recv(), s.send()
+      Close Socket: s.close()
+
+

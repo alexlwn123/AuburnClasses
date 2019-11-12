@@ -1,0 +1,33 @@
+Firmware: Doesn't change (ROM, Flash)
+Analysis:
+  - Firmware Scanning
+  - File System Identification
+  - File Extraction: (Signature Extraction)
+  - Entropy Analysis (Encryption)
+
+
+Magic Numbers: signatures
+
+Tools:
+  file : gets file type
+  strings: prints 'readable' characters
+  hexdump: prints all hex
+  readelf: displays info about Executible and Linkable (ELF) format
+  binwalk: searches binary for embedded files
+  objdumb: displays obj file info
+  gdb: gnu debugger allows analysis
+  firmware analysis toolkit: github repo that emulates and analyzes firmware for testing
+
+Carving: find starting sector of disk image and pull storage info
+dd: unsquash must be .fs
+
+
+Embedded OS patch issues:
+  - Need specialized licenses
+  - people don't report
+
+
+
+
+Assign Host: gets port
+
