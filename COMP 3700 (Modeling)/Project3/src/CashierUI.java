@@ -7,6 +7,7 @@ public class CashierUI {
     public JFrame view;
 
     public JButton btnAddPurchase = new JButton("Add New Purchase");
+    public JButton btnAddCustomer = new JButton("Add New Customer");
 
     public CashierUI() {
         this.view = new JFrame();
@@ -23,7 +24,8 @@ public class CashierUI {
 
         JPanel panelButtons = new JPanel(new FlowLayout());
         panelButtons.add(btnAddPurchase);
-
+        panelButtons.add(btnAddCustomer);
+       
         view.getContentPane().add(panelButtons);
 
 
@@ -33,6 +35,13 @@ public class CashierUI {
                 AddPurchaseUI ap = new AddPurchaseUI();
                 ap.run();
             }
+        });
+        btnAddCustomer.addActionListener(new ActionListener() {
+           @Override
+           public void actionPerformed(ActionEvent actionEvent) {
+              ManageCustomerUI ap = new ManageCustomerUI();
+              ap.run();
+           }
         });
     }
 }

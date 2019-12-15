@@ -123,7 +123,7 @@ public class LoginUI {
 
                 System.out.println("User = " + user);
                 if (user.mUserType == UserModel.MANAGER) {
-                    ManagerUI ui = new ManagerUI();
+                    ManagerUI ui = new ManagerUI(user);
                     ui.view.setVisible(true);
                 }
                 else if (user.mUserType == UserModel.CASHIER) {

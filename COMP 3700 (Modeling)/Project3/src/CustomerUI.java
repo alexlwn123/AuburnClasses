@@ -54,7 +54,7 @@ public class CustomerUI {
         btnMakePurchase.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                ManageCustomerUI ui = new ManageCustomerUI();
+                ManagePurchaseUI ui = new ManagePurchaseUI();
                 ui.run();
             }
         });
