@@ -1,0 +1,13 @@
+Sorting a hand of cards (Insertion Sort)
+  - Start with an empty hand, cards facing down on the table
+  - Remove one card at a time from the table and insert it into the correct position
+  - To find out the correct position, we compare it with each of the cards already in the hand from left to right
+
+Insertion Sort (A: array [1...n]; n >= 1)
+1   for j=2 to n
+2     key = A[j]
+3     i = j-1
+4     while i > 0 and A[i] > key
+5       A[i+1] = A[i]
+6       i = i-1
+7     A[i+1] = key

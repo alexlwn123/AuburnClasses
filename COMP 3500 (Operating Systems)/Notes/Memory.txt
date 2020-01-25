@@ -1,0 +1,56 @@
+Memory
+  -Primary
+    -RAM, Cache, Registers
+  -Secondary (First)
+    -Power Independent
+    -Hard drives
+    -Storage Files
+    -File Operations
+      -Read, Write, Modify, Delete, Execute
+    -Directory Operations
+      -List Files, Change Directory, Create/Delete/Move
+
+Internal Fragmentation
+  -Break up in blocks
+External Fragmentation
+  -Break up entire blocks
+  Advantage:
+    -Fast read/write
+  Disadvantage:
+    -Fills up blocks (waste space)
+  -Defragmentation
+    -Organize/compress empty blocks  [x, ,x] --> [x, x, ]
+
+Chained allocation
+  -The end of each block points to the next block
+  Advantage:
+    -Each block loses space for pointer
+    -Bad performance due to sequence
+    -No random access to block (must go through pointers)
+
+Indexed Allocation
+  
+  -Make indexed block table (FAT)
+  FAT: 
+    Name|Indexed block|File Size
+    FAT32 (max size: 2^32 ==> ~4GB) 
+    1 Byte ==> 8 bits ==> 2^8 ==> 256
+    2 Bytes ==> 2^16 ==> 2^6+10 ==> 2^6 * 2^10 ==> 64KB
+    3 Bytes ==> 2^24 ==> 2^4 * 2^20 ==> 16MB
+    4 Bytes ==> 2^32 ==> 2^2 * 2^30 ==> 4GB
+
+Block Size
+  -Small
+    -Advantage: less internal fragmentation, 
+    -Disadvantage: manage more blocks, performance
+  -Big
+    -opposite 
+
+Number of blocks
+  -hard drive size / block size
+
+
+
+
+
+
