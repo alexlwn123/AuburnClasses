@@ -1,0 +1,15 @@
+Part 1
+  - Pseudo-Driver
+  - Use binary file
+
+  - Write Word, Read Word (on word boundary: 0, 2, 4,...)
+  - Erase Sector
+  Word = 2 Bytes
+  
+  - Write Word
+    - Can flip 1 bit => 0 bit     (& 0)
+    - Cannot flip 0 => 1 bit
+
+  - Erase
+    - Flip all bits of all bytes in section to 1 (| 1)
+

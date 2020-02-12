@@ -49,8 +49,13 @@ Block Size
 Number of blocks
   -hard drive size / block size
 
+Free Space Table
+  -Put the table in an empty block
+  -Advantages: Wastes no space, can be located anywhere, works regardless of fragmentation, faster than alternatives
+  -Disadvantages: 
 
-
-
+Directory Structure
+  -Root directory pointing to subdirectories
+  -FAT: [Type Flag (file/directory/link/deleted/permissions), F. Name, Block num, size, date/time]
 
 
