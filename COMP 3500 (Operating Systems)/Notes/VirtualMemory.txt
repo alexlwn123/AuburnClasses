@@ -1,0 +1,6 @@
+In Memory: Code, Data, Stack
+
+Address Types
+  Logical -> Virtual translated to abs
+  Relative
+  Absolute
