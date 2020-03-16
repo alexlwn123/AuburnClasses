@@ -10,7 +10,6 @@ Memory Sections
   - Code: Instruction
   - Data: Global vars
   - Stack: local vars, return addr
-
   - Use for Flow ctrl / Data Access
 
 Paging (Considerations)
