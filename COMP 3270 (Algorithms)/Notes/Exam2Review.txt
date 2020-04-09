@@ -1,0 +1,33 @@
+Lecture slide sets: 7, 9, 10, 11
+
+- Making hypothisis about algorithm correctness
+- Four methods:
+  - contradiction
+  - counter example
+  - induction
+  - loop invarient
+
+- Notations of Complexty
+  - big/little o
+  - big/little omega
+  - Theta
+
+- Aproximate Analysis:
+  - Non-recursive:
+  - Recursive:
+
+
+- Detailed Analysis
+  - Non-recursive:
+    - Calculating T(n)
+    - Determining complexity order
+  - Recursive
+    - Develop Recurrence relations
+    - Interpret recurrence relations
+    - Solving recurrence relations using various methods
+    - Calculating T(n)
+    - Determining complexity order
+
+
+
+
