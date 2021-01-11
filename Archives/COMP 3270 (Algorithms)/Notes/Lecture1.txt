@@ -1,0 +1,9 @@
+Steps of Computational Problem Solving
+  - Problem specification
+  - Designing solution strategy
+  - Developing corresponding algorithms
+  - Understanding algorithms
+  - Ensuring correctness
+  - Analyzing and comparing the efficiency
+    - Theoretically, Empiricallly
+  - Choosing best Algorithm

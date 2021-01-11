@@ -1,0 +1,50 @@
+In Memory: Code, Data, Stack
+
+Address Types
+  Logical -> Virtual translated to absolute
+  Relative -> Translated to Absolute or logical
+  Absolute -> in physical memory
+
+
+Memory Sections
+  - Code: Instruction
+  - Data: Global vars
+  - Stack: local vars, return addr
+  - Use for Flow ctrl / Data Access
+
+Paging (Considerations)
+  - Page Size (Same as frame in physical memory)
+    - Must load page (virtual memory) in to a frame (physical memory)
+    - Smaller Page Size
+      - Less internal fragmentation
+      - Larger Page Table
+    - Larger Page size
+      - Larger internal fragmentation
+      - Smaller Page Table
+  - Issues
+    - Accessing a page that is not loaded in physical memory
+
+
+  - Fetching
+    - Demand Paging (if accessing non-loaded page, load it)
+    - Pre-paging (Fetch the next n pages)
+    - never use more physical memory then may be allocated
+
+
+  - Replacement Policies (which pages to unload)
+    - Replace page that won't be addressed soonest
+    - Lest Recently Used (LRU)
+    - FIFO: easy implementation, bad performance
+    - Clock: easy implementation, bad performance
+
+
+Physical Memory
+  - Stores Page Table
+  - Loads Pages (in frames)
+  - Limitations
+    - Finite space (Can't fit everything at once)
+    - Keep track of which page is loaded
+
+
+
+
