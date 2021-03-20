@@ -1,0 +1,12 @@
+PREF(a)=0.18 
+PREF(the)=0.17 
+PREF(from)=0.13 
+PREF(retrieval)=0.02 
+PREF(sun)=0.05 
+PREF(rises)=0.04 
+PREF(in)=0.16 
+PREF(BM25)=0.01 
+PREF(east)=0.02 
+PREF(sets)=0.04 
+PREF(west)=0.02 
+PREF(and)=0.16
